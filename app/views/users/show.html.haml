@@ -1,16 +1,16 @@
-.user-wrapper
-  .user-info-wrapper.span4
+.user-wrapper.span11.clearfix
+  .user-info-wrapper.span6.pull-left
     .user-contact
       this is contact
     .user-skill
       this is skill
-  .timeline-wrapper.span8
+  .timeline-wrapper.span5.pull-right
     .timeline
       - @user.experiences.each do |experience|
         .experience-wrapper.clearfix
           .experience-time.pull-left
             = experience.start_at.strftime("%y.%m")
-          .experience-content.span4.well.pull-left
+          .experience-content.well.pull-left
             %h5
               = experience.summary
               %hr

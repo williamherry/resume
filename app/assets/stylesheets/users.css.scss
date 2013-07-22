@@ -2,39 +2,55 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-.timeline {
-  width: 3px;
-  height: 100%;
-  background: linear-gradient(to right, rgba(95,97,120,.5) 0%,rgba(95,97,120,.8) 50%,rgba(95,97,120,.5) 100%);
-  position: relative;
-  left: 55%;
-  top: 10px;
+.user-wrapper {
+  margin: 0 auto;
+  margin-top: 20px;
+  float: none;
+
+  .user-info-wrapper {
+    margin-left: 0;
+    position: fixed;
+  }
+
+  .timeline-wrapper {
+    .timeline {
+      width: 3px;
+      height: 100%;
+      background: linear-gradient(to right, rgba(95,97,120,.5) 0%,rgba(95,97,120,.8) 50%,rgba(95,97,120,.5) 100%);
+      position: relative;
+      top: 10px;
+
+      .experience-wrapper {
+        padding-top: 30px;
+
+        .experience-time {
+          width: 55px;
+          height: 55px;
+          border-radius: 55px;
+          background: linear-gradient(to bottom, #737C9D 0%,#565B78 100%);
+          left: -26px;
+          position: absolute;
+          box-shadow: 0 0 1px 1px rgba(0,0,0,.1), 0px 2px 1px 1px rgba(0,0,0,.1);
+          color: snow;
+          font-size: 9px;
+          line-height: 55px;
+          text-align: center;
+          cursor: pointer;
+        }
+
+        .experience-content {
+          width: 380px;
+          padding-top: 8px;
+          margin-left: 50px;
+          hr {
+            margin: 10px 0;
+          }
+        }
+      }
+    }
+  }
 }
 
-.experience-wrapper {
-  width: 500px;
-  padding-top: 30px;
-}
 
-.experience-time {
-  width: 55px;
-  height: 55px;
-  border-radius: 55px;
-  background: linear-gradient(to bottom, #737C9D 0%,#565B78 100%);
-  left: -26px;
-  position: absolute;
-  box-shadow: 0 0 1px 1px rgba(0,0,0,.1), 0px 2px 1px 1px rgba(0,0,0,.1);
-  color: snow;
-  font-size: 9px;
-  line-height: 55px;
-  text-align: center;
-  cursor: pointer;
-}
 
-.experience-content {
-  padding-top: 8px;
-}
 
-hr {
-  margin: 10px 0;
-}
