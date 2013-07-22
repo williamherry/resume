@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130722223753) do
+ActiveRecord::Schema.define(version: 20130722231110) do
 
   create_table "experiences", force: true do |t|
     t.string   "summary"
@@ -31,6 +31,7 @@ ActiveRecord::Schema.define(version: 20130722223753) do
     t.string   "email"
     t.string   "blog"
     t.string   "github"
+    t.text     "praise"
   end
 
 end

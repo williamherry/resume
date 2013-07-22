@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
 
   mount_uploader :photo, PhotoUploader
 
-  validates_presence_of :name, :phone, :email, :blog, :github
+  validates_presence_of :name, :phone, :email, :blog, :github, :praise
 
   def github_homepage
     "https://github.com/" + github.to_s

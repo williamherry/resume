@@ -19,6 +19,8 @@
         .info
           %em.icon-github
           = link_to @user.github, @user.github_homepage
+        .info.praise
+          = simple_format @user.praise
     .user-skill.block.span2.pull-left.well
       this is skill
   .timeline-wrapper.span5.pull-right
