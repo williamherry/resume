@@ -1,8 +1,25 @@
 .user-wrapper.span11.clearfix
   .user-info-wrapper.span6.pull-left
-    .user-contact
-      this is contact
-    .user-skill
+    .user-contact.block.pull-left.well
+      .image-wrapper
+        = image_tag @user.photo
+      .detail-info
+        .info
+          %em.icon-user
+          = @user.name
+        .info
+          %em.icon-phone
+          = @user.phone
+        .info
+          %em.icon-envelope
+          = @user.email
+        .info
+          %em.icon-book
+          = link_to @user.blog, @user.blog
+        .info
+          %em.icon-github
+          = link_to @user.github, @user.github_homepage
+    .user-skill.block.span2.pull-left.well
       this is skill
   .timeline-wrapper.span5.pull-right
     .timeline

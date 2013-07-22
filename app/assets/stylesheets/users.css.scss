@@ -10,6 +10,36 @@
   .user-info-wrapper {
     margin-left: 0;
     position: fixed;
+
+    .user-contact {
+      background-color: #3EA0C1;
+      color: white;
+      width: 240px;
+      border: none;
+      img {
+        width: 100%;
+      }
+      .info {
+        margin-top: 2px;
+        a, a:visited {
+          color: #1A056B;
+        }
+      }
+      em {
+        width: auto;
+        height: 15px;
+        margin-right: 3px;
+      }
+    }
+
+    .block {
+      margin-left: 0;
+    }
+
+    .user-skill {
+      width: 180px;
+      margin-left: 30px;
+    }
   }
 
   .timeline-wrapper {
