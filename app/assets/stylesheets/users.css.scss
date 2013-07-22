@@ -6,9 +6,18 @@
   margin: 0 auto;
   margin-top: 20px;
   float: none;
+  width: 1060px;
+
+  hr {
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid #C7C7C7;
+  }
 
   .user-info-wrapper {
+    width: 540px;
     margin-left: 0;
+    margin-top: 20px;
     position: fixed;
 
     .user-contact {
@@ -21,7 +30,7 @@
       }
       .info {
         margin-top: 2px;
-        a, a:visited {
+        a, a:visited, a:hover {
           color: #1A056B;
         }
       }
@@ -31,7 +40,7 @@
         margin-right: 3px;
       }
       .praise {
-        margin-top: 20px;
+        margin-top: 10px;
       }
     }
 
@@ -46,6 +55,7 @@
   }
 
   .timeline-wrapper {
+    margin-top: -20px;
     .timeline {
       width: 3px;
       height: 100%;
@@ -77,11 +87,6 @@
           margin-left: 50px;
           background-color: #3EA0C1;
           border: none;
-          hr {
-            margin: 10px 0;
-            border: none;
-            border-top: 1px solid #C7C7C7;
-          }
         }
       }
     }
