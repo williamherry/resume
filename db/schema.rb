@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130722111551) do
+ActiveRecord::Schema.define(version: 20130722193157) do
 
   create_table "experiences", force: true do |t|
     t.string   "summary"
@@ -26,6 +26,7 @@ ActiveRecord::Schema.define(version: 20130722111551) do
     t.string   "full_name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "photo"
   end
 
 end
