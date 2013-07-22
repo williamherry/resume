@@ -1,9 +1,17 @@
-%p#notice= notice
-
-%p
-  %b Full name:
-  = @user.full_name
-
-= link_to 'Edit', edit_user_path(@user)
-\|
-= link_to 'Back', users_path
+.user-wrapper
+  .user-info-wrapper.span4
+    .user-contact
+      this is contact
+    .user-skill
+      this is skill
+  .timeline-wrapper.span8
+    .timeline
+      - @user.experiences.each do |experience|
+        .experience-wrapper.clearfix
+          .experience-time.pull-left
+            = experience.start_at.strftime("%y.%m")
+          .experience-content.span4.well.pull-left
+            %h5
+              = experience.summary
+              %hr
+            = experience.detail
