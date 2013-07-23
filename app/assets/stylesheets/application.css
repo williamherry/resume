@@ -14,6 +14,10 @@
  *= require_tree .
  */
 
+body {
+  background-image: url("background.png");
+}
+
 .main {
   width: 1080px;
   margin: 0 auto;
