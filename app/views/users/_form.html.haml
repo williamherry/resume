@@ -1,19 +1,11 @@
-= simple_form_for @user, :html => {:class => "form-horizontal"} do |f|
-  - if @user.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@user.errors.count, "error")} prohibited this user from being saved:"
-      %ul
-        - @user.errors.full_messages.each do |msg|
-          %li= msg
-
-  .form-inputs
-    = f.input :name
-    = f.input :phone
-    = f.input :email
-    = f.input :blog
-    = f.input :github
-    = f.input :praise, :rows => "5"
-    = f.input :photo
-
+= simple_form_for @user, :html => { :class => 'form-horizontal' } do |f|
+  = f.input :name
+  = f.input :photo
+  = f.input :phone
+  = f.input :email
+  = f.input :blog
+  = f.input :github
+  = f.input :praise
   .form-actions
-    = f.button :submit
+    = f.button :submit, :class => 'btn-primary'
+    = link_to t('.cancel', :default => t("helpers.links.cancel")), users_path, :class => 'btn'
