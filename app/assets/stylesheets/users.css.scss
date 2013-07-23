@@ -87,6 +87,18 @@
           margin-left: 50px;
           background-color: #3EA0C1;
           border: none;
+          position: relative;
+
+          .arrow-left {
+            position: absolute;
+            top: 13px;
+            left: -6px;
+            -webkit-transform: rotate(45deg);
+            width: 30px;
+            height: 30px;
+            background-color: #3EA0C1;
+            z-index: -10;
+          }
         }
       }
     }
