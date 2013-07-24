@@ -2,6 +2,7 @@ class User < ActiveRecord::Base
 
   has_many :experiences
   has_many :skills
+  has_many :projects
 
   mount_uploader :photo, PhotoUploader
 
