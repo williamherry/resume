@@ -27,6 +27,11 @@
         .skill
           %em.icon-check
           = skill.name
+    .user-project.block.span2.pull-left.well
+      - @user.projects.each do |project|
+        .project
+          %em.icon-reorder
+          = link_to project.name, project.url
   .timeline-wrapper.span5.pull-right
     .timeline
       - @user.experiences.each do |experience|
